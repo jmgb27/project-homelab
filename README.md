@@ -45,11 +45,13 @@ Let me tell you, setting up a virtualized pfSense router is a pain in the ass. T
 Fast forward, I bought a 32U open server rack. I totally did not anticipate how big it actually is. Now there are all these empty slots that need to be filled, and it's so tempting to buy more nodes just to make it look good. HAHAHA. 
 
 I'm not worried about single points of failure like having no redundancy for the firewall and switch—it's just a homelab. But my wallet definitely felt this project. Here is the final breakdown of the damage:
-
 | Component | Specs | Cost (USD) |
 | :--- | :--- | :--- |
 | **Node 1** | Xeon E5-2650L v2, DDR3 48GB RAM, 1TB SSD | $350 |
 | **Nodes 2 & 3** | 2x Dell SFF i5-8500T, DDR4 32GB RAM, 512GB SSD | $200 |
 | **Networking** | pfSense Router Firewall + L3 Switch | $275 |
 | **The Rack** | 32U Open Server Rack | $200 |
-| **Total Damage** | | **$1025** |
+| **Misc. & Reused** | Patch cables, old drives, mini PC SSDs | $0 (Repurposed) + ??? |
+| **Total Damage** | | **$1025+** |
+
+*(Honestly, the total damage is probably higher once you factor in all the other random components I already owned and just reused to make this work.)*
