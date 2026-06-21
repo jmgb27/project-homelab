@@ -21,11 +21,15 @@ I used this server for my automation tools and another mini PC as a budget NAS r
 
 ### Falling into the Proxmox Rabbit Hole
 
+<div align="center">
+  <img width="600" alt="IMG_3953-1" src="https://github.com/user-attachments/assets/e4ab3523-c7c0-4980-9394-c2ed0e840e55" />
+</div>
+
 After watching some homelab videos, I discovered Proxmox. I migrated everything over, but having only one node meant I was missing out on the cool stuff like ZFS and High Availability (HA). 
 
-Fast forward a few weeks, I decided to build a cluster. I wanted processors with a good balance of high core count, low power, and affordability. I landed on two barebone Dell Enterprise SFF PCs with i5-8500T processors (35W max TDP). I actually haggled with an eBay seller to get them for $40 each. 
+Fast forward a few weeks, I decided to build a cluster. I wanted processors with a good balance of high core count, low power, and affordability. I landed on two barebone Dell Enterprise SFF PCs with i5-8500T processors (35W max TDP). I actually haggled with an eBay seller to get the processors for $40 each.
 
-But RAM and SSDs are scary expensive right now, and I couldn't find any good deals on eBay. I gave up on storage and just cannibalized the SSDs from my old mini PCs. For RAM, my mini PC sticks weren't compatible with the enterprise Dells. But then I remembered Mercari Japan—a marketplace where I used to buy cheap second-hand guitars. Holy moly, I found a very good deal on a second-hand 64GB TeamGroup RAM kit for $250. It took weeks to ship, but hey, patience is a virtue.
+But RAM and SSDs are scary expensive right now, and I couldn't find any good deals on eBay. I gave up on storage and just cannibalized the SSDs from my old mini PCs. For RAM, my mini PC sticks weren't compatible with the enterprise Dells. But then I remembered Mercari Japan—a marketplace where I used to buy cheap second-hand guitars. I found a very good deal on a second-hand 64GB TeamGroup RAM kit for $250. It took weeks to ship, but hey, patience is a virtue.
 
 Once those two Dells were set up with Proxmox, I had my 3-node quorum. I set up ZFS and HA for critical instances like my Cloudflare Tunnel, because without it I can't access my web apps. Now I can finally clean the dust out of my Xeon server without taking the network down, because I can just move the instances to the other two servers.
 
